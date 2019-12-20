@@ -43,7 +43,7 @@ public class Task4 {
         totalMinute = (hourToMinute + t3.minutes + secToMinute);
 
         String money = String.format("%.4f",totalMinute*0.05);
-
+        System.out.println("----------------------------------------");
         System.out.println("Total cost of this call: " + money + "$");
 
     }
