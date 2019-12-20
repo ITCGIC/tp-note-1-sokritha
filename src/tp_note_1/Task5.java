@@ -15,8 +15,10 @@ public class Task5 {
         riels = sc.nextInt();
         dollar = (double)riels / 4000;
 
+        String money = String.format("%.4f", dollar);
+
         System.out.println("------------------------------------");
-        System.out.println(riels + " RIELS = " + dollar + " USD");
+        System.out.println(riels + " RIELS = " + money + " USD");
 
 
     }
