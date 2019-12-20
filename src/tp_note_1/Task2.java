@@ -11,14 +11,19 @@ public class Task2 {
         System.out.println("Input number of seconds: ");
 
         seconds = input.nextInt();
-        init_seconds = seconds;
-        hours = seconds/3600;
-        minutes = (seconds % 3600)/60;
-        seconds = (seconds % 3600)%60;
 
-        System.out.println("Time corresponding to "+ init_seconds + " seconds"+ " is: " + hours + ":"
-                + minutes + ":" + seconds
-        );
+        if (seconds < 0){
+            System.out.println("Time is invalid");
+        }else{
+            init_seconds = seconds;
+            hours = seconds/3600;
+            minutes = (seconds % 3600)/60;
+            seconds = (seconds % 3600)%60;
+
+            System.out.println("Time corresponding to "+ init_seconds + " seconds"+ " is: " + hours + ":"
+                    + minutes + ":" + seconds
+            );
+        }
 
     }
 }
